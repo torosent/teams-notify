@@ -73,6 +73,7 @@ TEAMS_TITLE="Hello World"
 TEAMS_MESSAGE="Today is a fine day"
 # RGB color to for message formatting. (Teams determines what is colored by this)
 TEAMS_COLOR="#efefef"
+```
 
 ## Build It
 
@@ -93,5 +94,3 @@ Publish to DockerHub
 ```
 make docker-build docker-push
 ```
-
-
