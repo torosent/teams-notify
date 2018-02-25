@@ -47,13 +47,6 @@ func main() {
 	}
 }
 
-func envOr(name, def string) string {
-	if d, ok := os.LookupEnv(name); ok {
-		return d
-	}
-	return def
-}
-
 func send(endpoint string, msg Webhook) error {
 	enc, err := json.Marshal(msg)
 	if err != nil {
